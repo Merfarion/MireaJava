@@ -1,31 +1,30 @@
 package com.company;
 
-public class Square extends Rectangle{
+public class Square extends Shape{
+    private double side;
 public Square (){}
 public Square (double side){
-this.length = side;
+this.side = side;
 }
     public Square (double side,String color,boolean filled){
 
-        this.length = side;
-        this.width = side;
+        this.side = side;
+
         this.color = color;
         this.filled = filled;
     }
 public double getSide(){
-    return length;
-    return width
+    return side;
 }
 public void setSide (double side){
-    this.length = side;
-    this.width = side;
+    this.side = side;
 }
     public double getArea(){
-    double s=length*length;
+    double s=side*side;
 return s;
     }
     public double getPerimeter(){
-    double p= 4*length;
+    double p= 4*side;
     return p;
     }
 
