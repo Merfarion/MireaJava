@@ -8,15 +8,17 @@ this.length = side;
     public Square (double side,String color,boolean filled){
 
         this.length = side;
-
+        this.width = side;
         this.color = color;
         this.filled = filled;
     }
 public double getSide(){
     return length;
+    return width
 }
 public void setSide (double side){
     this.length = side;
+    this.width = side;
 }
     public double getArea(){
     double s=length*length;
