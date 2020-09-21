@@ -1,35 +1,26 @@
 package com.company;
 
-public  class MovableCircle implements Movable {
-    private int radius;
+public class MovableCircle extends Circle  implements Movable {
     private MovablePoint center;
-public MovableCircle(int x,int y,int xSpeed,int ySpeed, int radius){
-    center.x=x;
-    center.y = y;
-    center.xSpeed=xSpeed;
-    center.ySpeed =ySpeed;
-    this.radius = radius;
 
-}
+
+    public MovableCircle(int x,int y, double radius) {
+        this.radius = radius;
+        this.center = new MovablePoint(x,y);
+
+    }
+
+
+    @Override
+    public void Move(int right, int down) {
+        center.Move(right, down);
+    }
 
     @Override
     public String toString() {
         return "MovableCircle{" +
-                "radius=" + radius +
-                ", center=" + center +
+                "center=" + center +
+                ", radius=" + radius +
                 '}';
-    }
-
-    public void moveUp(){
-        center.y+=center.ySpeed;
-    }
-    public void moveDown(){
-        center.y-=center.ySpeed;
-    }
-    public void moveLeft(){
-        center.x-=center.xSpeed;
-    }
-    public void moveRight(){
-        center.x+=center.xSpeed;
     }
 }

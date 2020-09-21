@@ -7,8 +7,8 @@ public class Square extends Rectangle{
     }
     public Square (double side,String color,boolean filled){
 
-        this.length = side;
-
+        super.length = side;
+        super.width = side;
         this.color = color;
         this.filled = filled;
     }

@@ -1,14 +1,33 @@
 package com.company;
 
-public class MovablePoint implements Movable{
-    int x,y;
-    int xSpeed,ySpeed;
+public class MovablePoint implements Movable {
+    private double x,y;
 
-    public MovablePoint (int x,int y,int xSpeed, int ySpeed){
-        this.x=x;
+    public MovablePoint(double x, double y) {
+        this.x = x;
         this.y = y;
-        this.xSpeed=xSpeed;
-        this.ySpeed =ySpeed;
+    }
+
+    public double getX() {
+        return x;
+    }
+
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    public double getY() {
+        return y;
+    }
+
+    public void setY(double y) {
+        this.y = y;
+    }
+
+    @Override
+    public void Move(int right, int down) {
+        x+=right;
+        y+=down;
     }
 
     @Override
@@ -16,20 +35,6 @@ public class MovablePoint implements Movable{
         return "MovablePoint{" +
                 "x=" + x +
                 ", y=" + y +
-                ", xSpeed=" + xSpeed +
-                ", ySpeed=" + ySpeed +
                 '}';
-    }
-    public void moveUp(){
-        y+=ySpeed;
-    }
-    public void moveDown(){
-        y-=ySpeed;
-    }
-    public void moveLeft(){
-        x-=xSpeed;
-    }
-    public void moveRight(){
-        x+=xSpeed;
     }
 }
