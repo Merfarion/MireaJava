@@ -44,7 +44,13 @@ public class Main {
     EmployeeSelector selector = employee -> employee.getSalary()>33000;
     company.DoSmthWithEmpl(
             selector,
-            ((employee, count) -> System.out.println("+"+count+"+"+'\n'+employee.toString() ))
+            new EmployeesHandle() {
+                @Override
+                public void HandleEmployees(Employee employee, int count) {
+                    System.out.println("=="+count + "==");
+                    System.out.println(employee);
+                }
+            }
     );
 	// write your code here
     }
