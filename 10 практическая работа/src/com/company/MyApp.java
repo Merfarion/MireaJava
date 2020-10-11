@@ -39,28 +39,12 @@ public class MyApp extends JFrame {
         panel.add(text2);
 
         panel.add(label3);
-//        text1.addActionListener(action->{
-//            try{
-//                a= Double.parseDouble(text1.getText());
-//
-//            }catch (Exception e){
-//                label1.setText(e.getMessage());
-//            }
-//        });
-//        text2.addActionListener(action->{
-//            try{
-//                b= Double.parseDouble(text2.getText());
-//
-//            }catch (Exception e){
-//                label1.setText(e.getMessage());
-//            }
-//        });
-        button1.addActionListener(action->{
+ActionListener(action->{
             try {
                 a= Double.parseDouble(text1.getText());
                 b= Double.parseDouble(text2.getText());
                 res = a+b;
-                label3.setText("Результат: "+String.format("%.4f",res));
+                label3.setText("Результат: "+res);
             }catch (Exception e){
                 label3.setText("error");}
         });
@@ -69,7 +53,7 @@ public class MyApp extends JFrame {
                 a= Double.parseDouble(text1.getText());
                 b= Double.parseDouble(text2.getText());
                 res = a-b;
-                label3.setText("Результат: "+String.format("%.4f",res));
+                label3.setText("Результат: "+res);
             }catch (Exception e){
                 label3.setText("error");}
         });
@@ -78,7 +62,7 @@ public class MyApp extends JFrame {
                 a= Double.parseDouble(text1.getText());
                 b= Double.parseDouble(text2.getText());
                 res = a*b;
-                label3.setText("Результат: "+String.format("%.4f",res));
+                label3.setText("Результат: "+res);
             }catch (Exception e){
                 label3.setText("error");}
         });
@@ -87,12 +71,7 @@ public class MyApp extends JFrame {
                 a= Double.parseDouble(text1.getText());
                 b= Double.parseDouble(text2.getText());
                 res = a/b;
-                if (res<0.0001){
-                    label3.setText("Результат: 0");
-                }
-                else {
-                    label3.setText("Результат: " + String.format("%.4f", res));
-                }
+                    label3.setText("Результат: " + res);
             }catch (Exception e){
                 label3.setText("error");}
         });
