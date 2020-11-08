@@ -15,7 +15,6 @@ public class recursive {
             File[] children = file.listFiles();
 
             for (File child : children) {
-                // Рекурсивный (Recursive)
                 this.fetchChild(child);
             }
         }
@@ -23,7 +22,6 @@ public class recursive {
             if(file.getAbsolutePath().endsWith(".java")) {
                 String path = file.getAbsolutePath();
                 System.out.println(file.getAbsolutePath());
-                //System.out.println(path);
                 try (BufferedReader br = new BufferedReader(new FileReader(path));
                      FileWriter writer = new FileWriter(result,true);
                 PrintWriter bw = new PrintWriter(writer)) {
