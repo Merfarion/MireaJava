@@ -1,3 +1,4 @@
+# C:\Users\gleba\IdeaProjects\MireaJava\1 практическая работа\src\com\company\Main.java
 ```java
 package com.company;
 
@@ -133,6 +134,7 @@ mas.add(i,p);
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\10 практическая работа\src\com\company\Main.java
 ```java
 package com.company;
 
@@ -149,6 +151,7 @@ public class Main {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\10 практическая работа\src\com\company\MyApp.java
 ```java
 package com.company;
 
@@ -238,6 +241,7 @@ public class MyApp extends JFrame {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\11 практическая работа\src\work\Main.java
 ```java
 package work;
 import java.util.ArrayList;
@@ -283,6 +287,7 @@ public class Main {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\12 практическая работа\src\com\company\Main.java
 ```java
 package com.company;
 
@@ -312,6 +317,7 @@ public class Main {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\12 практическая работа\src\com\company\TextEnum.java
 ```java
 package com.company;
 
@@ -333,6 +339,7 @@ public enum TextEnum {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\13 практическая работа\src\com\company\Employee.java
 ```java
 package com.company;
 
@@ -362,6 +369,7 @@ private int age;
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\13 практическая работа\src\com\company\Main.java
 ```java
 package com.company;
 
@@ -392,6 +400,7 @@ public class Main {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\13 практическая работа\src\com\company\ThrowException.java
 ```java
 package com.company;
 
@@ -401,6 +410,7 @@ public class ThrowException extends Exception {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\13 практическая работа\src\com\company\ThrowRuntimeException.java
 ```java
 package com.company;
 
@@ -409,6 +419,7 @@ public class ThrowRuntimeException extends RuntimeException{
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\14 практическая работа\src\com\company\Main.java
 ```java
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -499,6 +510,7 @@ public class Main {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\15-16 практическая работа\src\com\company\Graph.java
 ```java
 package com.company;
 
@@ -546,6 +558,7 @@ public void getInstruction(){
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\15-16 практическая работа\src\com\company\Main.java
 ```java
 package com.company;
 
@@ -572,6 +585,7 @@ public class Main {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\15-16 практическая работа\src\com\company\Node.java
 ```java
 package com.company;
 
@@ -603,6 +617,7 @@ public void setall (int connection,String instruction,Node state){
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\17-18 практическая работа\src\com\company\Main.java
 ```java
 package com.company;
 
@@ -622,6 +637,7 @@ public class Main {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\17-18 практическая работа\src\com\company\recursive.java
 ```java
 package com.company;
 
@@ -651,6 +667,7 @@ public class recursive {
                      FileWriter writer = new FileWriter(result,true);
                 PrintWriter bw = new PrintWriter(writer)) {
                     String text = br.readLine();
+                    bw.write("# "+path+"\n");
                     bw.write("```java"+"\n");
                         while (text!= null) {
                 System.out.println(text);
@@ -668,6 +685,7 @@ public class recursive {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\2 практическая работа\src\com\company\Ball.java
 ```java
 package com.company;
 
@@ -680,6 +698,7 @@ public class Ball {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\2 практическая работа\src\com\company\Book.java
 ```java
 package com.company;
 
@@ -692,6 +711,7 @@ public class Book {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\2 практическая работа\src\com\company\Dog.java
 ```java
 package com.company;
 
@@ -732,6 +752,7 @@ public class Dog {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\2 практическая работа\src\com\company\Main.java
 ```java
 package com.company;
 
@@ -753,6 +774,7 @@ public class Main {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\2 практическая работа\src\com\company\Shape.java
 ```java
 package com.company;
 
@@ -775,6 +797,7 @@ public class Shape {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\3 практическая работа\src\com\company\zadanie1\Circle.java
 ```java
 package com.company.zadanie1;
 
@@ -795,6 +818,7 @@ public Circle(double radius){
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\3 практическая работа\src\com\company\zadanie1\CircleTest.java
 ```java
 package com.company.zadanie1;
 
@@ -809,6 +833,7 @@ circle.setRadius(28.5);
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\3 практическая работа\src\com\company\zadanie2\Human.java
 ```java
 package com.company.zadanie2;
 
@@ -986,6 +1011,7 @@ public class Human {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\3 практическая работа\src\com\company\zadanie2\Test.java
 ```java
 package com.company.zadanie2;
 
@@ -1002,6 +1028,7 @@ System.out.println(gleb.toString());
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\3 практическая работа\src\com\company\zadanie3\Book.java
 ```java
 package com.company.zadanie3;
 
@@ -1052,6 +1079,7 @@ public class Book {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\3 практическая работа\src\com\company\zadanie3\BookTest.java
 ```java
 package com.company.zadanie3;
 
@@ -1070,6 +1098,7 @@ public class BookTest {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\4 практическая работа\src\com\company\Circle.java
 ```java
 package com.company;
 
@@ -1113,6 +1142,7 @@ return s;
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\4 практическая работа\src\com\company\Main.java
 ```java
 package com.company;
 
@@ -1133,6 +1163,7 @@ System.out.println(circle.getArea());
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\4 практическая работа\src\com\company\Rectangle.java
 ```java
 package com.company;
 
@@ -1188,6 +1219,7 @@ return  s;
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\4 практическая работа\src\com\company\Shape.java
 ```java
 package com.company;
 
@@ -1235,6 +1267,7 @@ return s;
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\4 практическая работа\src\com\company\Square.java
 ```java
 package com.company;
 
@@ -1274,6 +1307,7 @@ return s;
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\5 практическая работа\src\com\company\Circle.java
 ```java
 package com.company;
 
@@ -1317,6 +1351,7 @@ public class Circle extends Shape{
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\5 практическая работа\src\com\company\Main.java
 ```java
 package com.company;
 
@@ -1354,6 +1389,7 @@ System.out.println(circle.getArea());
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\5 практическая работа\src\com\company\Movable.java
 ```java
 package com.company;
 
@@ -1365,6 +1401,7 @@ public interface Movable {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\5 практическая работа\src\com\company\MovableCircle.java
 ```java
 package com.company;
 
@@ -1395,6 +1432,7 @@ public class MovableCircle extends Circle  implements Movable {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\5 практическая работа\src\com\company\MovablePoint.java
 ```java
 package com.company;
 
@@ -1439,6 +1477,7 @@ public class MovablePoint implements Movable {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\5 практическая работа\src\com\company\MovableRectangle.java
 ```java
 package com.company;
 import static java.lang.Math.*;
@@ -1529,6 +1568,7 @@ public class MovableRectangle  implements Movable {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\5 практическая работа\src\com\company\Rectangle.java
 ```java
 package com.company;
 
@@ -1584,6 +1624,7 @@ public class Rectangle extends Shape{
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\5 практическая работа\src\com\company\Shape.java
 ```java
 package com.company;
 
@@ -1631,6 +1672,7 @@ public abstract class Shape {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\5 практическая работа\src\com\company\Square.java
 ```java
 package com.company;
 
@@ -1670,6 +1712,7 @@ public class Square extends Rectangle{
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\6_практическая работа\src\com\company\Main.java
 ```java
 package com.company;
 
@@ -1719,6 +1762,7 @@ public class Main {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\7-8 практическая работа\src\com\company\Company.java
 ```java
 package com.company;
 import java.util.*;
@@ -1876,6 +1920,7 @@ public void getLowestSalary(int count){
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\7-8 практическая работа\src\com\company\Employee.java
 ```java
 package com.company;
 
@@ -1937,6 +1982,7 @@ public class Employee  {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\7-8 практическая работа\src\com\company\EmployeePosition.java
 ```java
 package com.company;
 
@@ -1947,6 +1993,7 @@ public interface EmployeePosition {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\7-8 практическая работа\src\com\company\Main.java
 ```java
 package com.company;
 
@@ -2049,6 +2096,7 @@ while (n!=0) {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\7-8 практическая работа\src\com\company\Manager.java
 ```java
 package com.company;
 
@@ -2081,6 +2129,7 @@ public class Manager implements EmployeePosition {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\7-8 практическая работа\src\com\company\Operator.java
 ```java
 package com.company;
 public class Operator implements EmployeePosition {
@@ -2102,6 +2151,7 @@ Company company;
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\7-8 практическая работа\src\com\company\TopManager.java
 ```java
 package com.company;
 
@@ -2132,6 +2182,7 @@ Company company;
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\9 практическая работа\src\com\company\Company.java
 ```java
 package com.company;
 
@@ -2174,6 +2225,7 @@ public class Company {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\9 практическая работа\src\com\company\Employee.java
 ```java
 package com.company;
 
@@ -2262,6 +2314,7 @@ public class Employee {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\9 практическая работа\src\com\company\EmployeeSelector.java
 ```java
 package com.company;
 
@@ -2271,6 +2324,7 @@ public interface EmployeeSelector {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\9 практическая работа\src\com\company\EmployeesHandle.java
 ```java
 package com.company;
 
@@ -2280,6 +2334,7 @@ public interface EmployeesHandle {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\9 практическая работа\src\com\company\Main.java
 ```java
 package com.company;
 
@@ -2342,6 +2397,7 @@ public class Main {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\9 практическая работа\src\com\company\Selector.java
 ```java
 package com.company;
 
@@ -2363,6 +2419,7 @@ public class Selector implements EmployeeSelector {
 ```
 
 
+# C:\Users\gleba\IdeaProjects\MireaJava\Кворт\src\com\company\Main.java
 ```java
 package com.company;
 

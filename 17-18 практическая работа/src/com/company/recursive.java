@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class recursive {
-    private File result;
+    private final File result;
     public recursive() {
         this.result = new File("C:/Users/gleba/IdeaProjects/MireaJava/17-18 практическая работа/src/com/company/result.md");
         result.delete();
@@ -26,7 +26,8 @@ public class recursive {
                      FileWriter writer = new FileWriter(result,true);
                 PrintWriter bw = new PrintWriter(writer)) {
                     String text = br.readLine();
-                    bw.write("```java"+"\n");
+                    bw.write("# " + path + "\n");
+                    bw.write("```java" + "\n");
                         while (text!= null) {
                 System.out.println(text);
                 bw.write(text);
