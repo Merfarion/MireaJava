@@ -1,0 +1,18 @@
+IP: /127.0.0.1
+Port: 124
+16/11/2020 12:42:11 | Server: new user - : Gleb
+IP: /127.0.0.1
+Port: 224
+16/11/2020 12:42:34 | Server: new user - : Oleg
+IP: /127.0.0.1
+Port: 224
+16/11/2020 12:42:36 | : Oleg: : Hi
+IP: /127.0.0.1
+Port: 124
+16/11/2020 12:42:41 | : Gleb: : Hi
+IP: /127.0.0.1
+Port: 224
+16/11/2020 12:43:21 | : Oleg: : Have a nice day, Gleb
+IP: /127.0.0.1
+Port: 124
+16/11/2020 12:43:33 | : Gleb: : Thanks, Oleg
