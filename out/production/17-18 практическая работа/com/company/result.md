@@ -52,7 +52,7 @@ mas.add(i,p);
         int a =2;
         int b =20;
         int kol = a+ (int) (Math.random()*b);
-        int[] mas2 = new int [kol];
+        int mas2 []= new int [kol];
         for (int g= 0;g<kol;g++){
             int h = a+ (int) (Math.random()*b);
             mas2[g]= h;
@@ -82,7 +82,7 @@ mas.add(i,p);
         Random r = new Random();
         int dif= b-a;
         kol = r.nextInt(dif);
-        int[] mas3  = new int[kol];
+        int mas3 [] = new int[kol];
         for (int g= 0;g<kol;g++){
             int h = r.nextInt(dif);
             mas3[g]=h;
@@ -161,7 +161,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class MyApp extends JFrame {
-    private final int clickCount = 0;
+    private int clickCount = 0;
     private double a =0;
     private double b = 0;
     private double res;
@@ -493,7 +493,7 @@ public class Main {
                     for (int j = 0; j < rule.size(); j++) {
                         String t = (String) rule.keySet().toArray()[j];
                         String r = (String) rule.values().toArray()[j];
-                        if (i + t.length() < rezult.length() && rezult.startsWith(t, i)) {
+                        if (i + t.length() < rezult.length() && rezult.substring(i, i + t.length()).equals(t)) {
                             rezult = rezult.replace(t, r + " ");
                             i += r.length();
                             break;
@@ -526,7 +526,7 @@ public class Graph {
     Node s4 = new Node();
     Node s5 = new Node();
     Node head = s1;
-private final ArrayList<String> rezult = new ArrayList<>();
+private ArrayList<String> rezult = new ArrayList<>();
     public Graph() {
         s1.setall(0,"create_project",s2);
         s1.setall(1,"add_library",s5);
@@ -592,9 +592,9 @@ package com.company;
 import java.util.ArrayList;
 
 public class Node {
-private final ArrayList<Integer> connections = new ArrayList<>();
-private final ArrayList<String> instructions = new ArrayList<>();
-private final ArrayList<Node> states =  new ArrayList<>();
+private ArrayList<Integer> connections = new ArrayList<>();
+private ArrayList<String> instructions = new ArrayList<>();
+private ArrayList<Node> states =  new ArrayList<>();
 public void setall (int connection,String instruction,Node state){
     connections.add(connection);
     instructions.add(instruction);
@@ -1467,7 +1467,7 @@ public interface Movable {
 package com.company;
 
 public class MovableCircle extends Circle  implements Movable {
-    private final MovablePoint center;
+    private MovablePoint center;
 
 
     public MovableCircle(int x,int y, double radius) {
@@ -1786,7 +1786,7 @@ public class Main {
         int sum=0;
         Scanner in = new Scanner(System.in);
         k = in.nextInt();
-        int[][] mas = new int[k][k];
+        int mas[][] = new int[k][k];
         for (int i=0;i<k;i++){
             for (int j=0; j<k; j++){
                // mas [i][j] = in.nextInt();
@@ -1829,8 +1829,8 @@ package com.company;
 import java.util.*;
 public class Company {
     private double income=0;
-    private final ArrayList <Employee> employees = new ArrayList<Employee>();
-    private final
+    private ArrayList <Employee> employees = new ArrayList<Employee>();
+    private
     Random r = new Random();
 
     public void hire(Employee man){
@@ -1988,7 +1988,7 @@ package com.company;
 public class Employee  {
    private String SecondName,Name;
    private EmployeePosition employeePosition;
-   private final double salary;
+   private double salary;
 
    public Employee(String secondName, String name, EmployeePosition employeePosition, double salary) {
       SecondName = secondName;
@@ -2164,8 +2164,8 @@ package com.company;
 import java.util.Random;
 
 public class Manager implements EmployeePosition {
-    private final int a=115000;private final int b=140000;
-    private final int diff = b-a;
+    private int a=115000,b=140000;
+    private int diff = b-a;
     Random r = new Random();
     Company company;
 
@@ -2463,8 +2463,8 @@ public class Main {
 package com.company;
 
 public class Selector implements EmployeeSelector {
-    private final  int salary1;
-    private final  int salary2;
+    private  int salary1;
+    private  int salary2;
 
     public Selector(int salary1, int salary2) {
         this.salary1 = salary1;

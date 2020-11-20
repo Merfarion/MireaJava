@@ -1,5 +1,3 @@
-# C:\Users\gleba\IdeaProjects\MireaJava\1 практическая работа\src\com\company\Main.java
-```java
 package com.company;
 
 import java.util.ArrayList;
@@ -52,7 +50,7 @@ mas.add(i,p);
         int a =2;
         int b =20;
         int kol = a+ (int) (Math.random()*b);
-        int[] mas2 = new int [kol];
+        int mas2 []= new int [kol];
         for (int g= 0;g<kol;g++){
             int h = a+ (int) (Math.random()*b);
             mas2[g]= h;
@@ -82,7 +80,7 @@ mas.add(i,p);
         Random r = new Random();
         int dif= b-a;
         kol = r.nextInt(dif);
-        int[] mas3  = new int[kol];
+        int mas3 [] = new int[kol];
         for (int g= 0;g<kol;g++){
             int h = r.nextInt(dif);
             mas3[g]=h;
@@ -131,11 +129,6 @@ mas.add(i,p);
         return fact;
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\10 практическая работа\src\com\company\Main.java
-```java
 package com.company;
 
 import javax.swing.*;
@@ -148,44 +141,37 @@ public class Main {
         });
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\10 практическая работа\src\com\company\MyApp.java
-```java
 package com.company;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class MyApp extends JFrame {
-    private final int clickCount = 0;
+    private int clickCount = 0;
     private double a =0;
     private double b = 0;
     private double res;
     public MyApp() {
-        setTitle("Calculator");
-        setSize(250,250);
+    setTitle("Calculator");
+    setSize(250,250);
 
-        JLabel label1 = new JLabel("Значение A");
-        label1.setHorizontalAlignment(JLabel.CENTER);
-        JLabel label2 =new JLabel("Значение Б");
-        label2.setHorizontalAlignment(JLabel.CENTER);
-        JLabel label3 = new JLabel("Результат");
-        label3.setHorizontalAlignment(JLabel.CENTER);
-        JButton button1 = new JButton("+");
-        JButton button2 = new JButton("-");
-        JButton button3 = new JButton("*");
-        JButton button4 = new JButton("/");
-        JTextField text1 = new JTextField(22);
-        JTextField text2 = new JTextField(22);
-        JPanel panel = new JPanel();
+    JLabel label1 = new JLabel("Значение A");
+    label1.setHorizontalAlignment(JLabel.CENTER);
+    JLabel label2 =new JLabel("Значение Б");
+    label2.setHorizontalAlignment(JLabel.CENTER);
+    JLabel label3 = new JLabel("Результат");
+    label3.setHorizontalAlignment(JLabel.CENTER);
+    JButton button1 = new JButton("+");
+    JButton button2 = new JButton("-");
+    JButton button3 = new JButton("*");
+    JButton button4 = new JButton("/");
+    JTextField text1 = new JTextField(22);
+    JTextField text2 = new JTextField(22);
+    JPanel panel = new JPanel();
         JPanel panel2 = new JPanel();
-        add(panel);
-        panel.setLayout(new GridLayout(6,0));
-        panel.add(label1);
+    add(panel);
+    panel.setLayout(new GridLayout(6,0));
+    panel.add(label1);
         panel.add(text1);
         panel2.add(button1);
         panel2.add(button2);
@@ -196,7 +182,7 @@ public class MyApp extends JFrame {
         panel.add(text2);
 
         panel.add(label3);
-        button1.addActionListener (action->{
+ActionListener(action->{
             try {
                 a= Double.parseDouble(text1.getText());
                 b= Double.parseDouble(text2.getText());
@@ -204,10 +190,7 @@ public class MyApp extends JFrame {
                 label3.setText("Результат: "+res);
             }catch (Exception e){
                 label3.setText("error");}
-        }
-        );
-
-
+        });
         button2.addActionListener(action->{
             try {
                 a= Double.parseDouble(text1.getText());
@@ -231,18 +214,13 @@ public class MyApp extends JFrame {
                 a= Double.parseDouble(text1.getText());
                 b= Double.parseDouble(text2.getText());
                 res = a/b;
-                label3.setText("Результат: " + res);
+                    label3.setText("Результат: " + res);
             }catch (Exception e){
                 label3.setText("error");}
         });
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\11 практическая работа\src\work\Main.java
-```java
 package work;
 import java.util.ArrayList;
 public class Main {
@@ -284,11 +262,6 @@ public class Main {
         return a;
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\12 практическая работа\src\com\company\Main.java
-```java
 package com.company;
 
 public class Main {
@@ -314,11 +287,6 @@ public class Main {
         }
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\12 практическая работа\src\com\company\TextEnum.java
-```java
 package com.company;
 
 public enum TextEnum {
@@ -336,11 +304,6 @@ public enum TextEnum {
         return field;
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\13 практическая работа\src\com\company\Employee.java
-```java
 package com.company;
 
 public class Employee {
@@ -366,11 +329,6 @@ private int age;
                 '}';
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\13 практическая работа\src\com\company\Main.java
-```java
 package com.company;
 
 import java.util.Scanner;
@@ -397,30 +355,15 @@ public class Main {
 	// write your code here
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\13 практическая работа\src\com\company\ThrowException.java
-```java
 package com.company;
 
 public class ThrowException extends Exception {
 
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\13 практическая работа\src\com\company\ThrowRuntimeException.java
-```java
 package com.company;
 
 public class ThrowRuntimeException extends RuntimeException{
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\14 практическая работа\src\com\company\Main.java
-```java
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -493,7 +436,7 @@ public class Main {
                     for (int j = 0; j < rule.size(); j++) {
                         String t = (String) rule.keySet().toArray()[j];
                         String r = (String) rule.values().toArray()[j];
-                        if (i + t.length() < rezult.length() && rezult.startsWith(t, i)) {
+                        if (i + t.length() < rezult.length() && rezult.substring(i, i + t.length()).equals(t)) {
                             rezult = rezult.replace(t, r + " ");
                             i += r.length();
                             break;
@@ -507,11 +450,6 @@ public class Main {
         }
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\15-16 практическая работа\src\com\company\Graph.java
-```java
 package com.company;
 
 import java.awt.*;
@@ -526,7 +464,7 @@ public class Graph {
     Node s4 = new Node();
     Node s5 = new Node();
     Node head = s1;
-private final ArrayList<String> rezult = new ArrayList<>();
+private ArrayList<String> rezult = new ArrayList<>();
     public Graph() {
         s1.setall(0,"create_project",s2);
         s1.setall(1,"add_library",s5);
@@ -555,11 +493,6 @@ public void getInstruction(){
     }
 }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\15-16 практическая работа\src\com\company\Main.java
-```java
 package com.company;
 
 import java.util.LinkedList;
@@ -582,19 +515,14 @@ public class Main {
       graph.getInstruction();
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\15-16 практическая работа\src\com\company\Node.java
-```java
 package com.company;
 
 import java.util.ArrayList;
 
 public class Node {
-private final ArrayList<Integer> connections = new ArrayList<>();
-private final ArrayList<String> instructions = new ArrayList<>();
-private final ArrayList<Node> states =  new ArrayList<>();
+private ArrayList<Integer> connections = new ArrayList<>();
+private ArrayList<String> instructions = new ArrayList<>();
+private ArrayList<Node> states =  new ArrayList<>();
 public void setall (int connection,String instruction,Node state){
     connections.add(connection);
     instructions.add(instruction);
@@ -614,40 +542,91 @@ public void setall (int connection,String instruction,Node state){
     }
 
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\17-18 практическая работа\src\com\company\Main.java
-```java
 package com.company;
 
 import java.io.*;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Scanner;
+import java.util.SplittableRandom;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         File folder = new File("C:/Users/gleba/IdeaProjects/MireaJava/");
         File result = new File("C:/Users/gleba/IdeaProjects/MireaJava/17-18 практическая работа/src/com/company/result.md");
+        for (File file:folder.listFiles()
+             ) {
+            if (folder.isDirectory()){
+                file = file.getAbsoluteFile();
+            }
+            System.out.println(file.getName());
+        }
+        File[]children = folder.listFiles();
+        for (File file : children) {
+            System.out.println(file.getAbsolutePath());
+        }
+        System.out.println("\n-----------------------");
+        System.out.println("String[] list():\n");
 
+        String[] paths = folder.list();
+        for (String path : paths) {
+
+            System.out.println(path);
+        }
         recursive recursive = new recursive();
         recursive.fetchChild(folder);
+//        if (folder.isDirectory()){
+//
+//            }
+        }
+//        Path path = Paths.get(".");
+//
+//        String basePath = "";
+//        String mainFile = basePath + "/Main.java";
+//        String newFile = basePath + "/Copy.txt";
+//        File file = new File(mainFile);
+//        if (file.isDirectory()) {
+//            String[] list = file.list();
+//
+//            for (String s : list) {
+//                System.out.println(Paths.get(basePath, s).toAbsolutePath());
+//            }
+//        }
+//        Scanner sc = new Scanner(System.in);
+//        String mainFilePath = file.getAbsolutePath();
+//        try {
+//            try (
+//                    BufferedReader reader = new BufferedReader(new FileReader(mainFilePath));
+//                    PrintWriter writer = new PrintWriter(newFile)) {
+//                String line = reader.readLine();
+//                while (line != null) {
+//                    System.out.println(line);
+//                    writer.write(line);
+//                    writer.write('\n');
+//                    sc.nextLine();
+//                    line = reader.readLine();
+//                }
+//            }
+//        } catch (FileNotFoundException e) {
+//            System.out.println("Incorrect file path");
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//
+//        System.out.println(path);
     }
-    }
 
 
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\17-18 практическая работа\src\com\company\recursive.java
-```java
 package com.company;
 
 import java.io.*;
 import java.util.Scanner;
 
 public class recursive {
-    private final File result;
+    private File result;
     public recursive() {
-        this.result = new File("C:/Users/gleba/IdeaProjects/MireaJava/17-18 практическая работа/src/com/company/result.md");
+        this.result = new File("C:/Users/gleba/IdeaProjects/MireaJava/17-18 практическая работа/src/com/company/Copy.txt");
         result.delete();
     }
     public void fetchChild(File file) {
@@ -656,6 +635,7 @@ public class recursive {
             File[] children = file.listFiles();
 
             for (File child : children) {
+                // Рекурсивный (Recursive)
                 this.fetchChild(child);
             }
         }
@@ -663,91 +643,23 @@ public class recursive {
             if(file.getAbsolutePath().endsWith(".java")) {
                 String path = file.getAbsolutePath();
                 System.out.println(file.getAbsolutePath());
+                //System.out.println(path);
                 try (BufferedReader br = new BufferedReader(new FileReader(path));
                      FileWriter writer = new FileWriter(result,true);
                 PrintWriter bw = new PrintWriter(writer)) {
                     String text = br.readLine();
-                    bw.write("# " + path + "\n");
-                    bw.write("```java" + "\n");
                         while (text!= null) {
                 System.out.println(text);
                 bw.write(text);
                 bw.write( "\n");
                text = br.readLine();
             }
-                        bw.write("```"+"\n\n\n");
                 }
                 catch (IOException ex) {
                     System.out.println(ex.getMessage());
                 }
             }
 }}}
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\19 практическая работа\src\com\company\Client.java
-```java
-package com.company;
-
-import java.io.IOException;
-import java.net.DatagramPacket;
-import java.net.DatagramSocket;
-import java.net.InetAddress;
-
-public class Client {
-    public static void main(String[] args) throws IOException {
-sendMessage("Hi Java","127.0.0.1",9087);
-    }
-    public static  void sendMessage (
-            String message,
-            String address,
-            int port)throws IOException {
-        DatagramSocket socket = new DatagramSocket();
-        byte[] data = message.getBytes();
-        DatagramPacket packet = new DatagramPacket(
-                data,0,data.length, InetAddress.getByName(address),
-                port
-        );
-        socket.send(packet);
-    }
-
-}
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\19 практическая работа\src\com\company\Server.java
-```java
-package com.company;
-
-import java.io.IOException;
-import java.net.DatagramPacket;
-import java.net.DatagramSocket;
-import java.net.SocketException;
-
-public class Server {
-
-    public static void main(String[] args) throws IOException {
-        DatagramSocket socket = new DatagramSocket(9087);
-        byte[] buffer = new byte[2024];
-        DatagramPacket packet = new DatagramPacket(
-                buffer,
-                0,
-                buffer.length);
-        System.out.println("listening on 9087");
-        while (true) {
-            socket.receive(packet);
-            System.out.println(packet.getAddress());
-            System.out.println(packet.getPort());
-            String message = new String(buffer, 0, packet.getLength());
-            System.out.println(message);
-        }
-    }
-}
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\2 практическая работа\src\com\company\Ball.java
-```java
 package com.company;
 
 public class Ball {
@@ -756,11 +668,6 @@ public class Ball {
     private double weight;
     private int price;
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\2 практическая работа\src\com\company\Book.java
-```java
 package com.company;
 
 public class Book {
@@ -769,11 +676,6 @@ public class Book {
     private double weight;
     private int god;
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\2 практическая работа\src\com\company\Dog.java
-```java
 package com.company;
 
 import java.util.Scanner;
@@ -810,11 +712,6 @@ public class Dog {
                 '}';
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\2 практическая работа\src\com\company\Main.java
-```java
 package com.company;
 
 import java.util.ArrayList;
@@ -832,11 +729,6 @@ public class Main {
 
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\2 практическая работа\src\com\company\Shape.java
-```java
 package com.company;
 
 public class Shape {
@@ -855,11 +747,6 @@ public class Shape {
                 '}';
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\3 практическая работа\src\com\company\zadanie1\Circle.java
-```java
 package com.company.zadanie1;
 
 public class Circle {
@@ -876,11 +763,6 @@ public Circle(double radius){
         this.radius = radius;
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\3 практическая работа\src\com\company\zadanie1\CircleTest.java
-```java
 package com.company.zadanie1;
 
 public class CircleTest {
@@ -891,11 +773,6 @@ circle.setRadius(28.5);
         System.out.println("Радиус окружности равен: " + circle.getRadius());
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\3 практическая работа\src\com\company\zadanie2\Human.java
-```java
 package com.company.zadanie2;
 
 public class Human {
@@ -1069,11 +946,6 @@ public class Human {
         }
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\3 практическая работа\src\com\company\zadanie2\Test.java
-```java
 package com.company.zadanie2;
 
 public class Test {
@@ -1086,11 +958,6 @@ System.out.println(gleb.toString());
 
 
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\3 практическая работа\src\com\company\zadanie3\Book.java
-```java
 package com.company.zadanie3;
 
 public class Book {
@@ -1137,11 +1004,6 @@ public class Book {
         this.kolvostr = kolvostr;
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\3 практическая работа\src\com\company\zadanie3\BookTest.java
-```java
 package com.company.zadanie3;
 
 import java.util.Scanner;
@@ -1156,11 +1018,6 @@ public class BookTest {
     System.out.println("Название книги: "+ book.getName()+"\nАвтор: "+book.getAuthor()+"\nКоличество страниц: "+book.getKolvostr()+"\nГод выпуска: "+book.getGod());
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\4 практическая работа\src\com\company\Circle.java
-```java
 package com.company;
 
 public class Circle extends Shape{
@@ -1200,11 +1057,6 @@ return s;
                 '}';
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\4 практическая работа\src\com\company\Main.java
-```java
 package com.company;
 
 public class Main {
@@ -1221,11 +1073,6 @@ System.out.println(circle.getArea());
         // write your code here
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\4 практическая работа\src\com\company\Rectangle.java
-```java
 package com.company;
 
 public class Rectangle extends Shape{
@@ -1277,11 +1124,6 @@ return  s;
                 '}';
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\4 практическая работа\src\com\company\Shape.java
-```java
 package com.company;
 
 public abstract class Shape {
@@ -1325,11 +1167,6 @@ return s;
                 '}';
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\4 практическая работа\src\com\company\Square.java
-```java
 package com.company;
 
 public class Square extends Shape{
@@ -1365,11 +1202,6 @@ return s;
         return super.toString();
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\5 практическая работа\src\com\company\Circle.java
-```java
 package com.company;
 
 public class Circle extends Shape{
@@ -1409,11 +1241,6 @@ public class Circle extends Shape{
                 '}';
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\5 практическая работа\src\com\company\Main.java
-```java
 package com.company;
 
 public class Main {
@@ -1447,11 +1274,6 @@ System.out.println(circle.getArea());
         System.out.println(rectangle);
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\5 практическая работа\src\com\company\Movable.java
-```java
 package com.company;
 
 public interface Movable {
@@ -1459,15 +1281,10 @@ public interface Movable {
     void Move(int right, int down);
 }
 
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\5 практическая работа\src\com\company\MovableCircle.java
-```java
 package com.company;
 
 public class MovableCircle extends Circle  implements Movable {
-    private final MovablePoint center;
+    private MovablePoint center;
 
 
     public MovableCircle(int x,int y, double radius) {
@@ -1490,11 +1307,6 @@ public class MovableCircle extends Circle  implements Movable {
                 '}';
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\5 практическая работа\src\com\company\MovablePoint.java
-```java
 package com.company;
 
 public class MovablePoint implements Movable {
@@ -1535,11 +1347,6 @@ public class MovablePoint implements Movable {
                 '}';
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\5 практическая работа\src\com\company\MovableRectangle.java
-```java
 package com.company;
 import static java.lang.Math.*;
 public class MovableRectangle  implements Movable {
@@ -1626,11 +1433,6 @@ public class MovableRectangle  implements Movable {
         p2.Move(right, down);
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\5 практическая работа\src\com\company\Rectangle.java
-```java
 package com.company;
 
 public class Rectangle extends Shape{
@@ -1682,11 +1484,6 @@ public class Rectangle extends Shape{
                 '}';
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\5 практическая работа\src\com\company\Shape.java
-```java
 package com.company;
 
 public abstract class Shape {
@@ -1730,11 +1527,6 @@ public abstract class Shape {
                 '}';
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\5 практическая работа\src\com\company\Square.java
-```java
 package com.company;
 
 public class Square extends Rectangle{
@@ -1770,11 +1562,6 @@ public class Square extends Rectangle{
     }
 }
 
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\6_практическая работа\src\com\company\Main.java
-```java
 package com.company;
 
 import java.util.Scanner;
@@ -1786,7 +1573,7 @@ public class Main {
         int sum=0;
         Scanner in = new Scanner(System.in);
         k = in.nextInt();
-        int[][] mas = new int[k][k];
+        int mas[][] = new int[k][k];
         for (int i=0;i<k;i++){
             for (int j=0; j<k; j++){
                // mas [i][j] = in.nextInt();
@@ -1820,17 +1607,12 @@ public class Main {
 	// write your code here
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\7-8 практическая работа\src\com\company\Company.java
-```java
 package com.company;
 import java.util.*;
 public class Company {
     private double income=0;
-    private final ArrayList <Employee> employees = new ArrayList<Employee>();
-    private final
+    private ArrayList <Employee> employees = new ArrayList<Employee>();
+    private
     Random r = new Random();
 
     public void hire(Employee man){
@@ -1978,17 +1760,12 @@ public void getLowestSalary(int count){
 }
     //public void SetPosition
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\7-8 практическая работа\src\com\company\Employee.java
-```java
 package com.company;
 
 public class Employee  {
    private String SecondName,Name;
    private EmployeePosition employeePosition;
-   private final double salary;
+   private double salary;
 
    public Employee(String secondName, String name, EmployeePosition employeePosition, double salary) {
       SecondName = secondName;
@@ -2040,22 +1817,12 @@ public class Employee  {
               '}';
    }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\7-8 практическая работа\src\com\company\EmployeePosition.java
-```java
 package com.company;
 
 public interface EmployeePosition {
     String getJobTitle();
     double calcSalary(double base);
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\7-8 практическая работа\src\com\company\Main.java
-```java
 package com.company;
 
 import java.io.BufferedReader;
@@ -2154,18 +1921,13 @@ while (n!=0) {
 
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\7-8 практическая работа\src\com\company\Manager.java
-```java
 package com.company;
 
 import java.util.Random;
 
 public class Manager implements EmployeePosition {
-    private final int a=115000;private final int b=140000;
-    private final int diff = b-a;
+    private int a=115000,b=140000;
+    private int diff = b-a;
     Random r = new Random();
     Company company;
 
@@ -2187,11 +1949,6 @@ public class Manager implements EmployeePosition {
         return t*0.05 + base;
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\7-8 практическая работа\src\com\company\Operator.java
-```java
 package com.company;
 public class Operator implements EmployeePosition {
 Company company;
@@ -2209,11 +1966,6 @@ Company company;
         return base;
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\7-8 практическая работа\src\com\company\TopManager.java
-```java
 package com.company;
 
 import java.util.Random;
@@ -2240,11 +1992,6 @@ Company company;
         }
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\9 практическая работа\src\com\company\Company.java
-```java
 package com.company;
 
 import java.util.ArrayList;
@@ -2283,11 +2030,6 @@ public class Company {
                 '}';
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\9 практическая работа\src\com\company\Employee.java
-```java
 package com.company;
 
 import java.time.LocalDate;
@@ -2372,31 +2114,16 @@ public class Employee {
                 '}';
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\9 практическая работа\src\com\company\EmployeeSelector.java
-```java
 package com.company;
 
 public interface EmployeeSelector {
   boolean isneeed (Employee employee);
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\9 практическая работа\src\com\company\EmployeesHandle.java
-```java
 package com.company;
 
 public interface EmployeesHandle {
     void HandleEmployees(Employee employee,int count);
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\9 практическая работа\src\com\company\Main.java
-```java
 package com.company;
 
 import java.util.ArrayList;
@@ -2455,16 +2182,11 @@ public class Main {
     }
 
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\9 практическая работа\src\com\company\Selector.java
-```java
 package com.company;
 
 public class Selector implements EmployeeSelector {
-    private final  int salary1;
-    private final  int salary2;
+    private  int salary1;
+    private  int salary2;
 
     public Selector(int salary1, int salary2) {
         this.salary1 = salary1;
@@ -2477,11 +2199,6 @@ public class Selector implements EmployeeSelector {
         return employee.getSalary()<salary1&&employee.getSalary()>salary2;
     }
 }
-```
-
-
-# C:\Users\gleba\IdeaProjects\MireaJava\Кворт\src\com\company\Main.java
-```java
 package com.company;
 
 import java.time.Instant;
@@ -2533,6 +2250,3 @@ public class Main {
 
     }
 }
-```
-
-
