@@ -17,7 +17,6 @@ import java.util.Scanner;
 public class JsonSample {
     static HttpClient httpClient = HttpClient.newHttpClient();
     static Gson gson = new Gson();
-
     public static void main(String[] args) throws IOException, InterruptedException {
         List<Item> items = new ArrayList<Item>();
         items.add(new Item(1, "Hi", true, "Sasha"));
