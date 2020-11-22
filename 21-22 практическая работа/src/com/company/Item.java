@@ -1,16 +1,17 @@
 package com.company;
 
-public class Item {
+public class Item //implements ItemStore
+{
     private int id;
     private String data;
-    private boolean flag;
-    private int someNumber;
+    private boolean isGood;
+    private String description;
 
-    public Item(int id, String data, boolean flag, int someNumber) {
+    public Item(int id, String data, boolean isGood, String description) {
         this.id = id;
         this.data = data;
-        this.flag = flag;
-        this.someNumber = someNumber;
+        this.isGood = isGood;
+        this.description = description;
     }
 
     public int getId() {
@@ -29,20 +30,20 @@ public class Item {
         this.data = data;
     }
 
-    public boolean isFlag() {
-        return flag;
+    public boolean isGood() {
+        return isGood;
     }
 
-    public void setFlag(boolean flag) {
-        this.flag = flag;
+    public void setGood(boolean good) {
+        isGood = good;
     }
 
-    public int getSomeNumber() {
-        return someNumber;
+    public String getDescription() {
+        return description;
     }
 
-    public void setSomeNumber(int someNumber) {
-        this.someNumber = someNumber;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Override
@@ -50,8 +51,8 @@ public class Item {
         return "Item{" +
                 "id=" + id +
                 ", data='" + data + '\'' +
-                ", flag=" + flag +
-                ", someNumber=" + someNumber +
+                ", isGood=" + isGood +
+                ", description='" + description + '\'' +
                 '}';
     }
 }

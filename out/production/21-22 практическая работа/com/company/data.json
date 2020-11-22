@@ -1,0 +1,9 @@
+[
+{"id":1,"data":"Hi","isGood":true,"description":"Sasha"},
+{"id":2,"data":"Hello","isGood":false,"description":"Ball"},
+{"id":3,"data":"Danke","isGood":true,"description":"Region"},
+{"id":4,"data":"Привет","isGood":false,"description":"Russia"},
+{"id":5,"data":"Java","isGood":true,"description":"Draw"},
+{"id":6,"data":"Frog pepe","isGood":false,"description":"Critek"},
+{"id":7,"data":"Champion","isGood":true,"description":"Blizzard"},
+{"id":8,"data":"dear","isGood":false,"description":"war"}]
