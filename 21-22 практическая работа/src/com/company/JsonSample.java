@@ -46,6 +46,8 @@ public class JsonSample {
                             .build();
                     HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
                     System.out.println(response.body());
+
+
                 }
                 while (true) {
                     System.out.println("Что вы хотите сделать?: \n 1) Вывести список на экран; \n 2) Вывести объект на экран по id; \n 3) Изменить данные объекта; \n 4) Удалить объект;\n 5) Добавить объект; \n 0) Закончить работу ");
