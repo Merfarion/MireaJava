@@ -20,6 +20,7 @@ public class Worker {
     private static final Gson gson = new Gson();
     private static final HttpClient httpclient = HttpClient.newHttpClient();
     private static final String pathTasks = "http://gitlessons2020.rtuitlab.ru:3000/tasks";
+    private static final String pathReports = "http://gitlessons2020.rtuitlab.ru:3000/reports";
     private static final String pathFile = "C:/Users/gleba/IdeaProjects/MireaJava/23-24 практическая работа/src/com/company/db.json";
     private static final File file = new File(pathFile);
     private List<Tasks> tasks = new ArrayList<>();
@@ -68,7 +69,13 @@ public class Worker {
             }
         } else {
             for (int i = 0; i < tasks.size(); i++) {
-                if (readyTask.get(i).getId() != tasks.get(i).getId()) {
+                int k = 0;
+                for (int j = 0; j < readyTask.size(); j++) {
+                    if (readyTask.get(j).getId() != tasks.get(i).getId()) {
+                        k++;
+                    }
+                }
+                if (k == readyTask.size()) {
                     getReport(new Reports(0, tasks.get(i).getId(), "Karvasarniy", result(tasks.get(i))));
                     readyTask.add(tasks.get(i));
                 }
@@ -78,12 +85,12 @@ public class Worker {
 
     private double result(Tasks tasks) {
         String example = tasks.getExpression();
-        int a, b;
+        double a, b;
         String operations;
         example = example.replace(" ", "");
         String[] examples = example.split("(?<=\\d)(?=\\D)|(?<=\\D)(?=\\D)|(?<=\\d\\D)(?=\\d)");
-        a = Integer.parseInt(examples[0]);
-        b = Integer.parseInt(examples[2]);
+        a = Double.parseDouble(examples[0]);
+        b = Double.parseDouble(examples[2]);
         operations = examples[1];
         switch (operations) {
             case "+":
@@ -111,6 +118,22 @@ public class Worker {
             e.printStackTrace();
         } catch (InterruptedException e) {
             e.printStackTrace();
+        }
+    }
+
+    public void delete(int start, int end) {
+        for (int id = start; id <= end; id++) {
+            HttpRequest request = HttpRequest.newBuilder()
+                    .DELETE()
+                    .uri(URI.create(pathReports + "/" + id))
+                    .build();
+            try {
+                httpclient.send(request, HttpResponse.BodyHandlers.ofString());
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }

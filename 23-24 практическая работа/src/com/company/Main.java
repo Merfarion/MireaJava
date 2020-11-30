@@ -9,6 +9,7 @@ public class Main {
             worker.getTasks();
             worker.saveTask();
             worker.setToFile();
+           // worker.delete(465,465);
             Thread.sleep((int) Math.random() * 1000 + 1000);
         }
     }

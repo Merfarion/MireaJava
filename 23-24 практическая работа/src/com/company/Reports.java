@@ -10,9 +10,9 @@ public class Reports {
         this.id = id;
         this.taskId = taskId;
         this.worker = worker;
+        result = (Math.round(result * Math.pow(10, 2)) / Math.pow(10, 2));
         this.result = result;
     }
-
     public int getId() {
         return id;
     }
