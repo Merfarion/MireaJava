@@ -33,7 +33,7 @@ public class HashList<K, V> implements HashMapInterface<K, V> {
         boolean b = false;
         int index = key.hashCode() % list.size();
         for (int i = 0; i < list.get(index).size(); i++) {
-            if (key == list.get(index).get(i).getKey()) {
+            if (list.get(index).get(i).getKey().equals(key)) {
                 list.get(index).get(i).setValue(value);
                 b = true;
             }
@@ -47,7 +47,7 @@ public class HashList<K, V> implements HashMapInterface<K, V> {
     public V get(K key) {
         int index = key.hashCode() % list.size();
         for (int i = 0; i < list.get(index).size(); i++) {
-            if (key == list.get(index).get(i).getKey()) {
+            if (list.get(index).get(i).getKey().equals(key)) {
                 return list.get(index).get(i).getValue();
             }
         }
@@ -58,7 +58,7 @@ public class HashList<K, V> implements HashMapInterface<K, V> {
     public V remove(K key) {
         int index = key.hashCode() % list.size();
         for (int i = 0; i < list.get(index).size(); i++) {
-            if (key == list.get(index).get(i).getKey()) {
+            if (list.get(index).get(i).getKey().equals(key)) {
                 list.get(index).remove(list.get(index).get(i));
             }
         }
