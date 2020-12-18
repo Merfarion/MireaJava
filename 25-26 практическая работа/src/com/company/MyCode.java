@@ -15,10 +15,10 @@ public class MyCode {
         hashList.add("key6", 56);
         hashList.add("key7", true);
         hashList.add("key8", -3.14);
-        hashList.getALl();
+        //hashList.getALl();
         System.out.println(hashList.get("key4"));
         hashList.remove("key7");
-        hashList.getALl();
+        //hashList.getALl();
         System.out.println(hashList.hashCode());
     }
 }
